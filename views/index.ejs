@@ -1,0 +1,20 @@
+<%include ./partials/header.ejs%>
+<div class="w-full h-screen  bg-[url('https://images.unsplash.com/photo-1506792006437-256b665541e2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover flex items-center justify-center">
+  <div class="w-72  bg-white px-4 py-5 rounded-md ">
+    <h1 class="text-xl font-bold text-center">Welcome To Pinterest</h1>
+    <form action="/login" method="post">
+      <input class=" block mt-2 w-full px-2 py-2 border-2 border-gray-200  rounded-md" type="text" name="username" placeholder="username">
+      <input class=" block mt-2 w-full px-2 py-2 border-2 border-gray-200  rounded-md" type="password" placeholder="password" name="password">
+     <a href="#" class=" ml-1 inline-block mt-3 font-semibold">forgot password?</a>
+      <input class=" block mt-2 w-full px-2 py-2 border-2  bg-red-600 rounded-full" type="submit" value="login">
+    </form>
+    
+    <p class="text-center  mt-2 text-md text-zinc-700 " >
+      By continuing, you agree to Pinterest's
+      <b>Terms of Service, Privacy policy.</b>
+    </p>
+    <P class="mt-3 px-1 py3" ><a href="/register">Not on Pinterest yet?Register Here</a></P>
+  </div>
+</div>
+
+<%include ./partials/footer.ejs %>

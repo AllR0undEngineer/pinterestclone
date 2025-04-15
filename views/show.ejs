@@ -1,0 +1,17 @@
+<%include ./partials/header.ejs %>
+<div class="w-full min-h-screen bg-zinc-800 text-white ">
+      <div class="cards flex items-center gap-5 ">
+       <% user.posts.forEach(function(post){ %>
+        <div class="card ml-4 px-8 py-4 w-42">
+            <div class="w-full h-32 bg-zinc-600 rounded-lg overflow-hidden">
+                <img class="w-full h-full object-cover" src="/images/uploads/<%=post.image%>" alt="img">
+               </div> 
+               <h3 class="post-text">Title-<p><%= post.title %></p></h3>
+            <h3 class="post-text">description-<p><%= post.description %></p></h3>
+            </div>
+       <% }) %>
+      </div>
+</div>
+
+
+<%include ./partials/footer.ejs %>
